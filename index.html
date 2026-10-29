@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Who Filled the Seats? MLB Attendance and World Series Ticket Prices | Action Network</title>
+<meta content="2026 MLB regular-season and postseason attendance, seating fill, family outing affordability, and World Series ticket-price comparisons across playoff clubs." name="description"/>
+<style>
+:root{--green:#087a4b;--deep:#092f23;--ink:#142b25;--slate:#476258;--border:#dce8e0;--light:#f6faf7;--blue:#306a95;--amber:#ca8540;--paper:#fff;--shadow:0 14px 50px rgba(9,47,35,.065)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;font:18px/1.64 Arial,Helvetica,sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}button,input{font:inherit}button{cursor:pointer}a{color:#066c49;text-underline-offset:3px}a:hover{color:#02482e}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{letter-spacing:-.035em}h2{font-size:clamp(30px,3vw,43px);line-height:1.17;margin-bottom:12px}h3{font-size:clamp(21px,2vw,27px);line-height:1.25}h4{font-size:19px}.shell{width:100%;max-width:1540px;margin:0 auto;padding-left:clamp(18px,3.2vw,55px);padding-right:clamp(18px,3.2vw,55px)}
+.brandbar{background:#092a1f;border-bottom:4px solid #12a36c;color:#fff;padding:14px 0}.brandbar .shell{display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:21px;line-height:1.2;font-weight:900;letter-spacing:-.035em}.logo span{color:#6ddeaa}.brandmeta{font-size:13px;color:#c9e5d6;font-weight:600}
+.jumps{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(13px);border-bottom:1px solid var(--border)}.jumps .shell{display:flex;gap:5px;overflow:auto;align-items:center;scrollbar-width:thin}.jumps a{font:800 14px/1.2 Arial,sans-serif;white-space:nowrap;display:inline-block;padding:17px 17px;text-decoration:none;color:#3c6554;border-bottom:3px solid transparent}.jumps a:hover,.jumps a:focus{background:#eff8f2;border-bottom-color:var(--green)}
+.hero{background:radial-gradient(circle at 92% 12%,rgba(159,230,188,.22),transparent 38%),linear-gradient(133deg,#0a3123,#105239);color:#fff;padding:58px 0 47px;overflow:hidden}.hero .shell{position:relative}.eyebrow{font-size:14px;color:#c2f1d5;font-weight:900;letter-spacing:.07em;margin-bottom:19px}.hero h1{max-width:1110px;font-size:clamp(40px,5.6vw,81px);line-height:1.06;font-weight:900;margin:0 0 24px;text-wrap:balance}.hero h1 em{color:#a3eab9;font-style:normal}.intro{max-width:1020px;color:#e7f6eb;font-size:clamp(18px,1.55vw,23px);line-height:1.55;margin:0}.hero-meta{display:flex;gap:10px 20px;flex-wrap:wrap;margin-top:27px;color:#cfe9d8;font-size:14px;font-weight:700}.hero-meta span{display:inline-flex;align-items:center;gap:7px}.hero-meta span:before{content:"";width:6px;height:6px;background:#9ce4bc;border-radius:50%}
+.statstrip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:32px;border:1px solid #bdcfbf;border-radius:12px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}.stat{padding:25px 22px;border-right:1px solid var(--border);min-width:0}.stat:last-child{border-right:0}.stat b{display:block;font-size:clamp(33px,3.35vw,53px);color:var(--green);line-height:1.06;letter-spacing:-.06em}.stat span{display:block;margin-top:8px;font-size:15px;font-weight:700;color:#415b50;line-height:1.4}
+.section{padding:69px 0 26px}.section-intro{max-width:990px;color:var(--slate);font-size:18px;margin-bottom:26px}.section-kicker{display:inline-flex;background:#e7f5eb;color:var(--green);font-weight:900;font-size:13px;letter-spacing:.025em;padding:7px 11px;margin-bottom:15px}.two-col{display:grid;grid-template-columns:minmax(0,1.27fr) minmax(310px,.73fr);gap:22px;align-items:start}.panel{border:1px solid var(--border);background:#fff;border-radius:12px;padding:25px;box-shadow:var(--shadow);min-width:0}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}.panel h3{margin:0}.panel-description{font-size:15px;color:#566a5e;margin:7px 0 0;line-height:1.55}.controls{display:flex;gap:7px;flex-wrap:wrap}.toggle{border:1px solid #ccddd2;border-radius:7px;background:#fff;color:#38594b;font-weight:800;font-size:13px;padding:9px 13px;line-height:1.3}.toggle[aria-pressed=true]{background:var(--deep);color:#fff;border-color:var(--deep)}.toggle:hover{border-color:var(--green)}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin:0 0 14px;font-size:14px;color:#536b5c;font-weight:700}.swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:7px}.swatch.reg{background:#9dbbb0}.swatch.play{background:var(--green)}.chart-rows{min-height:530px}.barline{border-bottom:1px solid #edf2ee;padding:12px 0;display:grid;grid-template-columns:minmax(104px,170px) minmax(0,1fr) 79px;align-items:center;gap:12px}.barline:last-child{border:0}.team-name{font-size:15px;font-weight:800;line-height:1.25}.team-name small{display:block;font-size:12px;font-weight:500;color:#789082;margin-top:2px}.bar-group{display:flex;flex-direction:column;gap:5px;position:relative}.bar-bg{height:11px;background:#eef4ef;border-radius:4px;overflow:hidden;position:relative}.bar{display:block;height:100%;border-radius:4px;transition:width .75s cubic-bezier(.23,.75,.32,1);max-width:100%}.bar.reg{background:#9ebbae}.bar.play{background:linear-gradient(90deg,#14aa6e,#00693e)}.bar.growth{background:linear-gradient(90deg,#81caaa,#087a4b)}.bar.burden{background:linear-gradient(90deg,#f0c38f,#bd762e)}.metric-value{text-align:right;font-size:18px;font-weight:900;color:#0c6644;font-variant-numeric:tabular-nums}.metric-value small{display:block;color:#778b7c;font-size:11px;font-weight:600;line-height:1.25}.footnote{font-size:14px;color:#61766a;line-height:1.6;margin:17px 0 0}.insights{display:flex;flex-direction:column;gap:12px}.insight{border:1px solid var(--border);background:#fbfdfa;border-left:5px solid var(--green);border-radius:8px;padding:20px 21px}.insight:nth-child(2){border-left-color:var(--blue)}.insight:nth-child(3){border-left-color:var(--amber)}.insight .value{font-size:37px;letter-spacing:-.05em;font-weight:900;line-height:1.1;color:var(--green);margin:6px 0}.insight:nth-child(2) .value{color:var(--blue)}.insight:nth-child(3) .value{color:#b57a39}.insight p{font-size:15px;line-height:1.6;color:#4c6358;margin-bottom:0}.insight strong{font-size:17px}.note-block{margin-top:14px;border-left:4px solid #cbded1;background:#f4faf6;padding:16px 18px;font-size:15px;color:#3c5f4b}
+.cost-layout{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);gap:22px}.scatter{width:100%;display:block;background:linear-gradient(#fff,#fff),repeating-linear-gradient(0deg,transparent 0 60px,#eef3ef 61px);border:1px solid #e6eee7;border-radius:8px;overflow:visible}.axis-label{font:12px Arial;color:#61776a}.dot{transition:transform .2s}.dot:hover{filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))}.scatter-key{display:flex;align-items:center;gap:8px;margin-top:13px;font-size:14px;color:#52675b}.scatter-key:before{content:'';width:10px;height:10px;border-radius:50%;background:#087a4b}
+.cost-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.cost-mini{padding:17px;border:1px solid #e1e9e2;border-radius:8px;background:#fafcfb}.cost-mini b{display:block;font-size:15px;margin:0 0 5px}.cost-mini strong{font-size:27px;line-height:1.1;color:#135a40}.cost-mini small{display:block;margin-top:5px;font-size:13px;color:#526a5c}.inline-link{display:inline-flex;align-items:center;gap:7px;margin-top:17px;font-size:15px;font-weight:800}
+.table-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:0 0 14px}.search{background:#fff;border:1px solid #bdcfbf;border-radius:7px;padding:11px 13px;color:#153f2d;font-size:15px;min-width:250px;max-width:100%;flex:1}.showall{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:800;color:#4c6156}.showall input{accent-color:var(--green);width:17px;height:17px}.table-wrap{border:1px solid var(--border);border-radius:10px;overflow:auto;scrollbar-width:thin;scrollbar-color:#85b69d #f0f5f0}table{border-collapse:collapse;width:100%;min-width:1250px;font:14px/1.4 Arial,Helvetica,sans-serif}th{position:sticky;top:0;background:#103d2d;color:#fff;text-align:left;white-space:normal;padding:13px 12px;vertical-align:bottom}th button{background:none;border:none;color:#fff;font-size:13px;line-height:1.3;text-align:left;font-weight:800;padding:0}th button:hover{text-decoration:underline}td{padding:14px 12px;border-bottom:1px solid #e8eee9;vertical-align:middle;font-variant-numeric:tabular-nums}tbody tr:nth-child(even){background:#f8fbf8}tbody tr:hover{background:#eaf7ed}td:first-child{font-weight:800;min-width:165px;position:sticky;left:0;background:inherit;box-shadow:4px 0 8px -7px #333}td.number{text-align:right}td.na{color:#87958b;font-style:italic}.table-help{font-size:13px;color:#64776a;margin:12px 0 0}.method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.method-card{border:1px solid var(--border);padding:20px;border-radius:8px;background:#fafcfb}.method-card h3{font-size:19px;margin-bottom:8px}.method-card p{font-size:15px;color:#4a6055;margin:0}.source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.source-list a{display:flex;align-items:center;justify-content:space-between;border:1px solid #dae8dd;padding:16px 18px;text-decoration:none;border-radius:8px;color:var(--green);font-size:15px;font-weight:800}.source-list a:after{content:'↗';font-size:19px}.source-list a:hover{background:#f0faf2}.source-details{margin-top:17px;border:1px solid var(--border);border-radius:8px;background:#fff;padding:14px 18px}.source-details summary{font-size:16px;font-weight:800;color:#146344;cursor:pointer}.source-game-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:15px}.source-game-links a{font-size:14px;padding:10px;background:#f6fbf7;border-radius:5px;text-decoration:none}.source-game-links a:hover{background:#e5f4e8}@media(max-width:760px){.source-game-links{grid-template-columns:1fr}}.section-footer{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:15px;margin-top:35px;padding-top:18px;border-top:1px solid var(--border)}.section-footer:before,.section-footer:after{content:''}.back{grid-column:2;border:1px solid #b0cfb9;background:white;color:#0b6e46;text-decoration:none;border-radius:6px;padding:11px 17px;font-size:14px;font-weight:900;min-height:44px}.back:hover{background:#e9f8ed}.page-footer{padding:37px 0 53px;margin-top:48px;background:#0c2e22;color:#d9eee2;font-size:15px}.page-footer strong{color:#fff}.page-footer a{color:#b5ebcc}.reveal{opacity:1;transform:none}.reveal.visible{animation:an-enter .7s ease-out both}@keyframes an-enter{from{opacity:.83;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:1050px){.two-col,.cost-layout{grid-template-columns:1fr}.chart-rows{min-height:0}.insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.statstrip{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--border)}}
+@media(max-width:760px){body{font-size:16px}.brandmeta{display:none}.jumps a{padding:15px 12px;font-size:13px}.hero{padding:44px 0 37px}.stat{padding:20px 16px}.stat span{font-size:13px}.section{padding-top:54px}.panel{padding:18px}.insights{grid-template-columns:1fr}.cost-list,.method-grid,.source-list{grid-template-columns:1fr}.barline{grid-template-columns:97px minmax(0,1fr) 66px;gap:8px}.team-name{font-size:13px}.metric-value{font-size:15px}.search{min-width:0;width:100%}.panel-description{font-size:14px}.section-footer{margin-top:25px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal.visible{animation:none}.bar{transition:none}}
+
+
+/* 2026 combined article: each major visualization occupies its own full-width row. */
+.stack-layout,.cost-layout,.two-col{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:22px!important;width:100%!important}
+.stack-layout > *,.cost-layout > *,.two-col > *{width:100%;min-width:0}
+.insights,.leading-insights,.cost-list,.method-grid,.source-list,.source-game-links{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:15px!important}
+.lead-findings{padding-top:43px;padding-bottom:24px}
+.lead-findings h2{max-width:1040px}
+.leading-insights{margin:0 0 16px}
+.insight{position:relative;display:block;width:100%;padding:29px clamp(22px,3.2vw,45px);border-left-width:7px;box-shadow:0 9px 26px rgba(10,53,35,.04);background:linear-gradient(100deg,#fbfdfa,#ffffff)}
+.insight strong{font-size:clamp(21px,2.1vw,27px);line-height:1.25;color:#152e24}
+.insight .value{font-size:clamp(43px,5vw,68px);margin:10px 0 7px}
+.insight p{font-size:clamp(16px,1.2vw,19px);line-height:1.62;max-width:1050px}
+.insight.insight-world{border-left-color:#b77b35;background:linear-gradient(105deg,#fffcf7,#fff)}
+.insight.insight-world .value{color:#a66a28}
+.lead-context{font-size:15px;line-height:1.6;color:#5f7566;margin:13px 0 0}
+.chart-rows{min-height:0!important}
+.cost-list{margin-top:22px}
+.cost-mini{border-left:4px solid var(--green);padding:19px 24px}
+.scatter{width:100%;height:clamp(330px,46vw,590px);max-height:590px}
+.panel{width:100%}
+.panel-head{display:flex;flex-direction:column;align-items:stretch;gap:16px}
+.ws-key-figure{padding:clamp(25px,4vw,56px);background:linear-gradient(113deg,#0a3929,#106b46);color:#fff;border:1px solid #117b54;border-radius:12px;margin:0 0 24px;box-shadow:0 18px 38px rgba(0,78,44,.12)}
+.ws-key-label{display:block;font:900 16px/1.4 Arial,sans-serif;letter-spacing:.02em;color:#caeeda}
+.ws-key-figure>strong{display:block;font:900 clamp(52px,7vw,90px)/1.1 Arial,sans-serif;letter-spacing:-.05em;margin:15px 0;color:#fff}
+.ws-key-figure p{font-size:clamp(17px,1.4vw,21px);line-height:1.68;max-width:1180px;margin:0;color:#eef9f2}
+.ws-stages{display:flex;flex-direction:column;gap:23px}
+.ws-stage{padding:clamp(22px,3.3vw,43px)}
+.ws-stage-index{display:inline-block;background:#eaf5ec;color:#06794b;font-weight:900;font-size:14px;padding:8px 12px;margin-bottom:15px}
+.ws-stage h3{font-size:clamp(24px,2.8vw,35px);margin-bottom:10px}
+.ws-stage .panel-description{font-size:17px}
+.ws-team-list{display:flex;flex-direction:column;gap:13px;margin-top:25px}
+.ws-team-row{padding:clamp(21px,2.4vw,31px);background:#f7fbf8;border:1px solid #dce9de;border-left:5px solid #0b8554;border-radius:9px;min-width:0}
+.ws-team-row:nth-child(2){border-left-color:#5389ab;background:#f7fafc}
+.ws-team-name{display:block;font-weight:900;font-size:clamp(17px,1.5vw,22px);margin-bottom:7px}
+.ws-cost{display:block;font-size:clamp(37px,4.4vw,63px);font-weight:900;letter-spacing:-.05em;line-height:1.11;color:#0a6240}
+.ws-team-row:nth-child(2) .ws-cost{color:#2b688f}
+.ws-cost span{display:block;font-size:16px;letter-spacing:0;font-weight:600;line-height:1.45;margin-top:7px;color:#496254}
+.ws-income{color:#425d4d;margin:14px 0 10px;font-size:clamp(16px,1.3vw,19px)}
+.ws-income b{color:#0a6842;font-size:clamp(22px,2vw,29px)}
+.ws-track{height:15px;border-radius:5px;overflow:hidden;background:#e1ebe3;margin:10px 0 8px}
+.ws-fill{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,#4ac18c,#087a4b);transform:scaleX(1);transform-origin:left}
+.ws-team-row:nth-child(2) .ws-fill{background:linear-gradient(90deg,#8cb4cb,#2b688f)}
+.reveal.visible .ws-fill{animation:ws-fill-enter .9s cubic-bezier(.19,.77,.25,1) both}
+@keyframes ws-fill-enter{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.ws-detail{display:block;font-size:15px;color:#4b6557}
+.ws-verdict{margin-top:24px;border-top:5px solid #0b8554}
+.ws-verdict h3{font-size:clamp(24px,2.6vw,33px);margin-bottom:12px}
+.ws-verdict p{font-size:17px;line-height:1.7;color:#4b6054}
+.ws-details{border:1px solid var(--border);border-radius:10px;margin-top:15px;background:#fff;overflow:hidden}
+.ws-details summary{padding:20px 25px;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#0a6742;font-size:18px;font-weight:800;cursor:pointer}
+.ws-details summary::-webkit-details-marker{display:none}
+.ws-details summary:hover{background:#f2faf4}
+.ws-details summary span{font-size:23px;line-height:1}
+.ws-details[open] summary span{transform:rotate(45deg)}
+.ws-details-inner{padding:0 23px 26px}
+.ws-details-inner p{font-size:16px;color:#52695b;line-height:1.7}
+.ws-table{min-width:700px;width:100%}
+.ws-table td:not(:first-child),.ws-table th:not(:first-child){text-align:right}
+.ws-table td:first-child{position:static;box-shadow:none}
+.ws-caveat{padding:14px 0}
+#world-series{scroll-margin-top:74px}
+@media(max-width:760px){.lead-findings{padding-top:36px}.insight{padding:21px 17px}.ws-key-figure{padding:23px 19px}.ws-team-row{padding:19px 16px}.ws-details summary{padding:17px 14px;font-size:16px}.ws-details-inner{padding:0 13px 18px}.panel-head .controls{width:100%}}
+@media(prefers-reduced-motion:reduce){.ws-fill{transform:scaleX(1)!important;animation:none!important}}
+</style>
+</head>
+<body id="page-top">
+<div class="brandbar"><div class="shell"><div class="logo">Action <span>Network</span></div><div class="brandmeta">2026 MLB attendance research</div></div></div>
+<nav aria-label="Sections" class="jumps"><div class="shell"><a href="#highlights">Top findings</a><a href="#turnout">Attendance charts</a><a href="#costs">Attendance and cost</a><a href="#all-teams">All 12 teams</a><a href="#world-series">World Series ticket prices</a><a href="#methodology">How we measured it</a></div></nav>
+<header class="hero" id="overview"><div class="shell"><div class="eyebrow">2026 MLB regular season and playoffs</div><h1>Who Filled the Seats? <em>Baseball Crowds From Opening Day to October</em></h1><p class="intro">Which ballparks drew the strongest crowds as the games got bigger? We compared regular-season attendance with October turnout, then put those numbers alongside stadium seating and the cost of a family trip to the ballpark.</p><div class="hero-meta"><span>12 postseason clubs</span><span>9 teams hosted playoff games</span><span>Attendance, seating and family affordability</span></div></div></header><section class="section shell lead-findings" id="highlights">
+<div class="reveal">
+<span class="section-kicker">The findings at a glance</span>
+<h2>What the attendance and price figures reveal</h2>
+<p class="section-intro">From regular-season ballpark trips to the World Series, the biggest changes show up in crowd size, seating demand and the price of a ticket. Explore the complete team-by-team comparisons below.</p>
+</div>
+<div aria-label="Four leading findings" class="insights leading-insights"><div class="reveal insight"><strong>Biggest jump in average crowd</strong><div class="value">+121.7%</div><p>Tampa Bay's average home crowd more than doubled during the playoffs, rising from 17,469 to 38,734 fans per game.</p></div><div class="reveal insight"><strong>Largest average playoff crowd</strong><div class="value">50,184</div><p>Los Angeles averaged more than 50,000 fans over its four postseason home games.</p></div><div class="reveal insight"><strong>Most expensive family outing</strong><div class="value">$570.16</div><p>Of the 12 playoff clubs, the Cubs had the highest regular-season game-day cost for a family of four.</p></div><div class="insight insight-world reveal">
+<strong>World Series tickets hit a new level in Milwaukee</strong>
+<div class="value">$10,394</div>
+<p>Four tickets at the average published World Series get-in asking price for Brewers home games were estimated at $10,394, equal to 160.1% of the Milwaukee area's median monthly household income. The same four-ticket regular-season benchmark was $175.16. These are different ticket-price snapshots, not actual spending.</p>
+</div></div>
+<p class="lead-context reveal">Announced crowd figures include both home and visiting supporters. Ticket-price figures are advertised benchmarks, not confirmed purchases.</p>
+<div class="section-footer"><a class="back" href="#page-top">↑ Back to sections</a></div>
+</section>
+
+<main>
+<section class="section shell" id="turnout"><div class="reveal"><div class="section-kicker">Attendance across the season</div><h2>How much did home crowds change in October?</h2><p class="section-intro">Explore each club's announced average home attendance against its published seating figure. Switch views to see the regular-season comparison, the growth in average crowds, or the relative cost of a family game day.</p></div><div class="stack-layout"><div class="panel reveal"><div class="panel-head"><div><h3 id="chart-title">How full were the ballparks?</h3><p class="panel-description" id="chart-subtitle">Home attendance as a share of listed fixed seats. A figure above 100% can include standing room.</p></div><div aria-label="Choose comparison" class="controls" role="group"><button aria-pressed="true" class="toggle" data-mode="fill" type="button">Seat fill</button><button aria-pressed="false" class="toggle" data-mode="growth" type="button">Crowd growth</button><button aria-pressed="false" class="toggle" data-mode="burden" type="button">Family cost</button></div></div><div class="legend" id="chart-legend"><span><i class="swatch reg"></i>Regular season</span><span><i class="swatch play"></i>Playoffs</span></div><div aria-live="polite" class="chart-rows" id="bar-chart"></div><p class="footnote" id="chart-footnote">The Rays opened additional fixed seats for the playoffs. Crowd totals include visiting fans and standing-room admissions where applicable.</p></div><div class="note-block"><strong>A note on the crowd figures:</strong> More people at a game doesn't necessarily mean more home-team supporters. These are announced attendance totals, which include visiting fans.</div></div><div class="section-footer"><a class="back" href="#page-top">↑ Back to sections</a></div></section>
+<section class="section shell" id="costs"><div class="reveal"><div class="section-kicker">Cost and accessibility</div><h2>What did it cost families to keep showing up?</h2><p class="section-intro">Crowds tell one part of the story. Ticket prices, concessions, parking and local incomes provide another. This view compares the regular-season cost of a family-of-four outing with the median monthly household income in each metro area.</p></div><div class="stack-layout"><div class="panel reveal"><h3>Attendance and affordability, side by side</h3><p class="panel-description">Among teams that hosted playoff games, each dot compares the regular-season family expense (horizontal axis) with playoff crowds relative to listed seats (vertical axis).</p><svg aria-label="Scatter plot of family outing cost as percentage of monthly income against postseason home attendance relative to seating" class="scatter" id="scatter" role="img" viewbox="0 0 600 465"></svg><div class="scatter-key">Each marker represents a team that hosted playoff games</div><p class="footnote">This is a comparison, not evidence that higher prices caused any change in attendance. The affordability estimate uses metro household income, not income reported by ticket buyers.</p></div><div class="panel reveal"><h3>Family expenses varied widely</h3><p class="panel-description">These figures cover the regular season. They include four tickets and the standard game-day extras in Action Network's regular-season figures shown on this page.</p><div class="cost-list" id="cost-cards"></div><div class="note-block"><strong>Keep the periods separate:</strong> The family-outing estimates are for the regular season. They are not the actual amounts paid to attend postseason games.</div></div></div><div class="section-footer"><a class="back" href="#page-top">↑ Back to sections</a></div></section>
+<section class="section shell" id="all-teams"><div class="reveal"><div class="section-kicker">Full 12-team comparison</div><h2>Explore every postseason team</h2><p class="section-intro">Sort the figures or search by team. The table includes all 12 clubs that made the playoffs, including three that played postseason games but did not host one.</p></div><div class="panel reveal"><div class="table-controls"><input aria-label="Search teams" class="search" id="team-search" placeholder="Search for a team…" type="search"/><label class="showall"><input id="host-only" type="checkbox"/>Only teams that hosted a playoff game</label></div><div aria-label="Scrollable team-by-team attendance table" class="table-wrap" role="region" tabindex="0"><table><thead><tr id="table-header"><th><button data-key="team" type="button">Team ↕</button></th><th><button data-key="homeGames" type="button">Home playoff games ↕</button></th><th><button data-key="regSeats" type="button">Regular seats ↕</button></th><th><button data-key="playSeats" type="button">Playoff seats ↕</button></th><th><button data-key="regFill" type="button">Regular seat fill ↕</button></th><th><button data-key="playFill" type="button">Playoff seat fill ↕</button></th><th><button data-key="growth" type="button">Avg. crowd growth ↕</button></th><th><button data-key="familyCost" type="button">Family outing cost ↕</button></th><th><button data-key="familyBurden" type="button">Share of monthly income ↕</button></th><th><button data-key="income" type="button">Metro median income ↕</button></th></tr></thead><tbody id="team-body"></tbody></table></div><p class="table-help" id="table-count">Showing 12 teams. Scroll sideways on smaller screens to see every column.</p></div><div class="section-footer"><a class="back" href="#page-top">↑ Back to sections</a></div></section>
+<section class="section shell" id="world-series">
+<div class="reveal">
+<span class="section-kicker">From April to the World Series</span>
+<h2>How ticket affordability changed as the stakes grew</h2>
+<p class="section-intro">Milwaukee and Tampa Bay finished the year on baseball’s biggest stage. Their ticket prices tell a different story from their crowd totals: tickets advertised for the World Series were far more expensive than regular-season seats. Here’s how the four-ticket benchmarks changed across the season.</p>
+</div>
+<div class="ws-key-figure reveal">
+<span class="ws-key-label">Milwaukee’s World Series four-ticket benchmark</span>
+<strong>$10,394</strong>
+<p>That was <b>59.3 times</b> the Brewers’ regular-season four-ticket price benchmark and represented <b>160.1%</b> of the metro area’s median monthly household income. These are published asking-price comparisons, not money known to have been spent by ticket buyers.</p>
+</div>
+<div class="ws-stages"><article class="ws-stage panel reveal">
+<div class="ws-stage-index">01 / 03 · Regular season</div>
+<h3>Regular season</h3>
+<p class="panel-description">Four tickets at each team’s regular-season average single-ticket price.</p>
+<div class="ws-team-list"><div class="ws-team-row">
+<span class="ws-team-name">Milwaukee Brewers</span>
+<strong class="ws-cost">$175.16 <span>for four tickets</span></strong>
+<p class="ws-income"><b>2.7%</b> of local median monthly household income</p>
+<div aria-label="Milwaukee Brewers four-ticket benchmark $175.16" class="ws-track" role="img"><span class="ws-fill" style="width:82.11%"></span></div>
+<span class="ws-detail">$43.79 average ticket</span>
+</div><div class="ws-team-row">
+<span class="ws-team-name">Tampa Bay Rays</span>
+<strong class="ws-cost">$213.32 <span>for four tickets</span></strong>
+<p class="ws-income"><b>3.3%</b> of local median monthly household income</p>
+<div aria-label="Tampa Bay Rays four-ticket benchmark $213.32" class="ws-track" role="img"><span class="ws-fill" style="width:100.00%"></span></div>
+<span class="ws-detail">$53.33 average ticket</span>
+</div></div>
+<p class="footnote">These are ticket-only estimates. The full regular-season family outings, including concessions and parking, were $244.10 for the Brewers and $290.32 for the Rays.</p>
+</article><article class="ws-stage panel reveal">
+<div class="ws-stage-index">02 / 03 · Postseason resale snapshot</div>
+<h3>Postseason resale snapshot</h3>
+<p class="panel-description">Four tickets at the earlier average playoff resale asking-price benchmark.</p>
+<div class="ws-team-list"><div class="ws-team-row">
+<span class="ws-team-name">Milwaukee Brewers</span>
+<strong class="ws-cost">$1,759.52 <span>for four tickets</span></strong>
+<p class="ws-income"><b>27.1%</b> of local median monthly household income</p>
+<div aria-label="Milwaukee Brewers four-ticket benchmark $1,759.52" class="ws-track" role="img"><span class="ws-fill" style="width:91.25%"></span></div>
+<span class="ws-detail">$439.88 per ticket · +904.5% over regular-season average</span>
+</div><div class="ws-team-row">
+<span class="ws-team-name">Tampa Bay Rays</span>
+<strong class="ws-cost">$1,928.20 <span>for four tickets</span></strong>
+<p class="ws-income"><b>29.6%</b> of local median monthly household income</p>
+<div aria-label="Tampa Bay Rays four-ticket benchmark $1,928.20" class="ws-track" role="img"><span class="ws-fill" style="width:100.00%"></span></div>
+<span class="ws-detail">$482.05 per ticket · +803.9% over regular-season average</span>
+</div></div>
+<p class="footnote">These were advertised resale prices collected before the postseason, rather than completed sales. The observations can reflect different playoff rounds.</p>
+</article><article class="ws-stage panel reveal">
+<div class="ws-stage-index">03 / 03 · World Series get-in prices</div>
+<h3>World Series get-in prices</h3>
+<p class="panel-description">Four tickets at the average published get-in asking prices for each team’s guaranteed home games.</p>
+<div class="ws-team-list"><div class="ws-team-row">
+<span class="ws-team-name">Milwaukee Brewers</span>
+<strong class="ws-cost">$10,394 <span>for four tickets</span></strong>
+<p class="ws-income"><b>160.1%</b> of local median monthly household income</p>
+<div aria-label="Milwaukee Brewers four-ticket benchmark $10,394" class="ws-track" role="img"><span class="ws-fill" style="width:100.00%"></span></div>
+<span class="ws-detail">About $2,599 per ticket</span>
+</div><div class="ws-team-row">
+<span class="ws-team-name">Tampa Bay Rays</span>
+<strong class="ws-cost">$3,222 <span>for four tickets</span></strong>
+<p class="ws-income"><b>49.4%</b> of local median monthly household income</p>
+<div aria-label="Tampa Bay Rays four-ticket benchmark $3,222" class="ws-track" role="img"><span class="ws-fill" style="width:31.00%"></span></div>
+<span class="ws-detail">About $806 per ticket</span>
+</div></div>
+<p class="footnote">World Series figures average October 20–21 published entry-price snapshots from three sources. Some listings were standing room; ticket quantities are estimates and no transactions were verified.</p>
+</article></div>
+<div class="panel reveal ws-verdict">
+<h3>Milwaukee faced the steeper World Series price jump</h3>
+<p>On the published get-in benchmarks, four Brewers tickets would have cost roughly <b>$10,394</b>, versus <b>$3,222</b> for the Rays. The Milwaukee estimate equaled 160.1% of local median monthly household income; Tampa Bay’s equaled 49.4%.</p>
+<p>The two metro areas had similar annual median household incomes in the source dataset: <b>$77,919 in Milwaukee</b> and <b>$78,275 in Tampa Bay</b>. Different ticket benchmarks are used at each stage, so this is an illustration of changing affordability, not a same-seat price index.</p>
+</div>
+<details class="ws-details reveal">
+<summary>See the full 12-team postseason resale-price comparison <span aria-hidden="true">+</span></summary>
+<div class="ws-details-inner">
+<p>These prices came from the earlier postseason asking-price dataset. The percentage compares the postseason resale asking-price benchmark with each team’s regular-season average ticket price, rather than transactions for a matched seat or date.</p>
+<div aria-label="Postseason resale asking-price comparison for 12 MLB teams" class="table-wrap" role="region" tabindex="0">
+<table class="ws-table"><thead><tr><th>Team</th><th>Regular-season avg.</th><th>Postseason resale asking avg.</th><th>Increase</th></tr></thead><tbody><tr><td>Chicago Cubs</td><td>$116.68</td><td>$1,558.87</td><td>+1,236.0%</td></tr>
+<tr><td>New York Yankees</td><td>$77.95</td><td>$1,014.71</td><td>+1,201.7%</td></tr>
+<tr><td>Milwaukee Brewers</td><td>$43.79</td><td>$439.88</td><td>+904.5%</td></tr>
+<tr><td>Tampa Bay Rays</td><td>$53.33</td><td>$482.05</td><td>+803.9%</td></tr>
+<tr><td>San Diego Padres</td><td>$47.88</td><td>$424.63</td><td>+786.9%</td></tr>
+<tr><td>Chicago White Sox</td><td>$44.06</td><td>$354.78</td><td>+705.2%</td></tr>
+<tr><td>Philadelphia Phillies</td><td>$68.09</td><td>$528.31</td><td>+675.9%</td></tr>
+<tr><td>Atlanta Braves</td><td>$42.57</td><td>$313.54</td><td>+636.5%</td></tr>
+<tr><td>Los Angeles Dodgers</td><td>$100.58</td><td>$724.95</td><td>+620.8%</td></tr>
+<tr><td>Boston Red Sox</td><td>$90.11</td><td>$508.65</td><td>+464.5%</td></tr>
+<tr><td>Cleveland Guardians</td><td>$51.45</td><td>$233.73</td><td>+354.3%</td></tr>
+<tr><td>Houston Astros</td><td>$69.40</td><td>$179.66</td><td>+158.9%</td></tr></tbody></table></div>
+</div>
+</details>
+<details class="ws-details reveal">
+<summary>See higher World Series median resale-price benchmarks <span aria-hidden="true">+</span></summary>
+<div class="ws-details-inner">
+<p>Using the mean of published median resale listing prices across three sources gives higher estimates: <b>$21,965</b> for four Brewers tickets (338.3% of monthly metro income) and <b>$5,693</b> for four Rays tickets (87.3%). These cross-source averages do not have consistent fee treatment and are not completed purchases.</p>
+</div>
+</details>
+<p class="footnote ws-caveat reveal">Ticket-only benchmarks exclude parking, food, travel and lodging. The earlier resale snapshot and the October 20–21 World Series get-in prices do not measure the same ticket category or point in time.</p>
+<div class="section-footer"><a class="back" href="#page-top">↑ Back to sections</a></div>
+</section><section class="section shell" id="methodology"><div class="reveal"><div class="section-kicker">Sources and definitions</div><h2>How we made the comparisons</h2><p class="section-intro">The aim is to show turnout and affordability together without treating the two as proof of cause and effect.</p></div><div class="method-grid reveal"><div class="method-card"><h3>Average crowds</h3><p>For each period, we divided a team's announced home attendance by its number of home games. The postseason analysis covers 40 home games among nine clubs. These are not unique-fan counts.</p></div><div class="method-card"><h3>Seating fill</h3><p>Average attendance divided by the venue's published fixed seating capacity. The Rays expanded fixed seating for the playoffs. Standing room and other open areas can produce figures over 100%; this is not literal building occupancy.</p></div><div class="method-card"><h3>Cost of attending</h3><p>Regular-season family costs cover four average-priced tickets, selected concessions and parking. The cost burden equals that outing estimate divided by one-twelfth of the metro area's annual median household income.</p></div><div class="method-card"><h3>Which teams are included?</h3><p>All 12 clubs that reached the 2026 playoffs appear in the table. The Cubs, Red Sox and Phillies did not host a postseason game, so their playoff attendance figures are shown as unavailable, not zero.</p></div><div class="method-card">
+<h3>World Series ticket estimates</h3>
+<p>We compared four tickets at different advertised price benchmarks: regular-season average prices, a pre-playoff resale asking-price snapshot and the average published October 20–21 World Series get-in asking prices. The income share uses one month of metro median household income (annual estimate divided by 12). Sources and fee treatment differ across stages. Results are illustrative price benchmarks, not verified purchases or like-for-like ticket comparisons.</p>
+</div></div><div class="source-list reveal"><a href="https://www.baseball-reference.com/leagues/majors/2026-misc.shtml" rel="nofollow noopener noreferrer" target="_blank">2026 regular-season attendance</a><a href="https://api.census.gov/data/2024/acs/acs1/groups/B19013.html" rel="nofollow noopener noreferrer" target="_blank">U.S. Census metro income estimates</a><a href="https://www.wusf.org/sports/2026-09-30/boosted-rays-return-tropicana-field-mlb-attendance-rises-fourth-straight-year" rel="nofollow noopener noreferrer" target="_blank">Tropicana Field seating context</a><a href="https://www.ticketnews.com/2026/10/brewers-rays-world-series-ticket-prices-timeless-ticket/" rel="nofollow noopener noreferrer" target="_blank">World Series prices: TicketNews</a><a href="https://www.wusf.org/sports/2026-10-21/rays-world-series-tickets-can-be-found-they-will-cost-you" rel="nofollow noopener noreferrer" target="_blank">World Series prices: WUSF</a><a href="https://www.rateyourseats.com/blog/cheap_seats/world-series-tickets-2026-brewers-vs-rays-prices-compared" rel="nofollow noopener noreferrer" target="_blank">World Series prices: RateYourSeats</a></div><details class="source-details"><summary>View the nine teams’ playoff game records</summary><div class="source-game-links"><a href="https://www.baseball-reference.com/teams/ATL/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Atlanta Braves game records ↗</a><a href="https://www.baseball-reference.com/teams/HOU/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Houston Astros game records ↗</a><a href="https://www.baseball-reference.com/teams/NYY/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">New York Yankees game records ↗</a><a href="https://www.baseball-reference.com/teams/SDP/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">San Diego Padres game records ↗</a><a href="https://www.baseball-reference.com/teams/CLE/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Cleveland Guardians game records ↗</a><a href="https://www.baseball-reference.com/teams/LAD/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Los Angeles Dodgers game records ↗</a><a href="https://www.baseball-reference.com/teams/MIL/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Milwaukee Brewers game records ↗</a><a href="https://www.baseball-reference.com/teams/TBR/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Tampa Bay Rays game records ↗</a><a href="https://www.baseball-reference.com/teams/CHW/2026-schedule-scores.shtml" rel="nofollow noopener noreferrer" target="_blank">Chicago White Sox game records ↗</a></div></details><p class="footnote reveal">Postseason crowds are from team schedule and box-score records, compiled for this analysis. Published stadium capacities and game-level sources are documented in the accompanying research spreadsheet. Metro income uses 2024 ACS 1-year estimates; regular-season costs reflect the Action Network family cost figures presented on this page. All attendance comparisons are descriptive and do not establish why people attended.</p><div class="section-footer"><a class="back" href="#page-top">↑ Back to sections</a></div></section>
+</main><footer class="page-footer"><div class="shell"><strong>Action Network Research</strong><p style="margin:6px 0 0">2026 MLB regular season, postseason and World Series · Home attendance, ballpark seating and ticket affordability</p></div></footer>
+<script>
+const teams=[{"team":"Tampa Bay Rays","short":"Rays","homeGames":8,"regSeats":25025,"playSeats":31042,"regAvg":17469,"playAvg":38734,"regFill":69.81,"playFill":124.78,"fillDelta":54.97,"growth":121.73,"income":78275,"familyCost":290.32,"familyBurden":4.45,"playAsk":482.05,"postBurden":29.56,"ballpark":"Tropicana Field","metro":"Tampa-St. Petersburg-Clearwater, FL"},{"team":"San Diego Padres","short":"Padres","homeGames":4,"regSeats":39860,"playSeats":39860,"regAvg":41322,"playAvg":47504,"regFill":103.67,"playFill":119.18,"fillDelta":15.51,"growth":14.96,"income":109132,"familyCost":286.92,"familyBurden":3.15,"playAsk":424.63,"postBurden":18.68,"ballpark":"Petco Park","metro":"San Diego-Chula Vista-Carlsbad, CA"},{"team":"New York Yankees","short":"Yankees","homeGames":3,"regSeats":46537,"playSeats":46537,"regAvg":41214,"playAvg":48769,"regFill":88.56,"playFill":104.8,"fillDelta":16.23,"growth":18.33,"income":99852,"familyCost":401.5,"familyBurden":4.83,"playAsk":1014.71,"postBurden":48.78,"ballpark":"Yankee Stadium","metro":"New York-Newark-Jersey City, NY-NJ"},{"team":"Milwaukee Brewers","short":"Brewers","homeGames":6,"regSeats":41900,"playSeats":41900,"regAvg":34431,"playAvg":42692,"regFill":82.17,"playFill":101.89,"fillDelta":19.72,"growth":23.99,"income":77919,"familyCost":244.1,"familyBurden":3.76,"playAsk":439.88,"postBurden":27.1,"ballpark":"American Family Field","metro":"Milwaukee-Waukesha, WI"},{"team":"Chicago White Sox","short":"White Sox","homeGames":2,"regSeats":40615,"playSeats":40615,"regAvg":24524,"playAvg":40255,"regFill":60.38,"playFill":99.11,"fillDelta":38.73,"growth":64.15,"income":90770,"familyCost":255.01,"familyBurden":3.37,"playAsk":354.78,"postBurden":18.76,"ballpark":"Rate Field","metro":"Chicago-Naperville-Elgin, IL-IN"},{"team":"Cleveland Guardians","short":"Guardians","homeGames":6,"regSeats":34830,"playSeats":34830,"regAvg":24709,"playAvg":33831,"regFill":70.94,"playFill":97.13,"fillDelta":26.19,"growth":36.92,"income":72532,"familyCost":260.8,"familyBurden":4.31,"playAsk":233.73,"postBurden":15.47,"ballpark":"Progressive Field","metro":"Cleveland, OH"},{"team":"Atlanta Braves","short":"Braves","homeGames":5,"regSeats":41084,"playSeats":41084,"regAvg":34573,"playAvg":38520,"regFill":84.15,"playFill":93.76,"fillDelta":9.61,"growth":11.42,"income":92344,"familyCost":242.44,"familyBurden":3.15,"playAsk":313.54,"postBurden":16.3,"ballpark":"Truist Park","metro":"Atlanta-Sandy Springs-Roswell, GA"},{"team":"Los Angeles Dodgers","short":"Dodgers","homeGames":4,"regSeats":56000,"playSeats":56000,"regAvg":49805,"playAvg":50184,"regFill":88.94,"playFill":89.61,"fillDelta":0.68,"growth":0.76,"income":96405,"familyCost":503.14,"familyBurden":6.26,"playAsk":724.95,"postBurden":36.1,"ballpark":"Dodger Stadium","metro":"Los Angeles-Long Beach-Anaheim, CA"},{"team":"Houston Astros","short":"Astros","homeGames":2,"regSeats":41168,"playSeats":41168,"regAvg":30520,"playAvg":35013,"regFill":74.14,"playFill":85.05,"fillDelta":10.91,"growth":14.72,"income":81417,"familyCost":340.6,"familyBurden":5.02,"playAsk":179.66,"postBurden":10.59,"ballpark":"Daikin Park","metro":"Houston-Pasadena-The Woodlands, TX"},{"team":"Chicago Cubs","short":"Cubs","homeGames":0,"regSeats":41649,"playSeats":41649,"regAvg":36662,"playAvg":null,"regFill":88.03,"playFill":null,"fillDelta":null,"growth":null,"income":90770,"familyCost":570.16,"familyBurden":7.54,"playAsk":1558.87,"postBurden":82.43,"ballpark":"Wrigley Field","metro":"Chicago-Naperville-Elgin, IL-IN"},{"team":"Boston Red Sox","short":"Red Sox","homeGames":0,"regSeats":37755,"playSeats":37755,"regAvg":34905,"playAvg":null,"regFill":92.45,"playFill":null,"fillDelta":null,"growth":null,"income":117825,"familyCost":464.36,"familyBurden":4.73,"playAsk":508.65,"postBurden":20.72,"ballpark":"Fenway Park","metro":"Boston-Cambridge-Newton, MA-NH"},{"team":"Philadelphia Phillies","short":"Phillies","homeGames":0,"regSeats":42901,"playSeats":42901,"regAvg":39932,"playAvg":null,"regFill":93.08,"playFill":null,"fillDelta":null,"growth":null,"income":90850,"familyCost":337.9,"familyBurden":4.46,"playAsk":528.31,"postBurden":27.91,"ballpark":"Citizens Bank Park","metro":"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"}];
+const fmt=(n)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
+const money=(n)=>'$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const pct=(n)=>Number(n).toFixed(1)+'%';
+const chart=document.getElementById('bar-chart'),legend=document.getElementById('chart-legend'),headline=document.getElementById('chart-title'),sub=document.getElementById('chart-subtitle'),note=document.getElementById('chart-footnote');
+let currentMode='fill';
+function drawChart(mode){
+ currentMode=mode;
+ document.querySelectorAll('.toggle').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+ let list=[...teams];let max;
+ if(mode==='fill'){
+  list=list.filter(t=>t.homeGames).sort((a,b)=>b.playFill-a.playFill);max=135;
+  headline.textContent='How full were the ballparks?';sub.textContent='Average home crowds relative to listed fixed seats';
+  legend.innerHTML='<span><i class="swatch reg"></i>Regular season</span><span><i class="swatch play"></i>Playoffs</span>';
+  note.textContent='A figure above 100% can reflect standing room or other open areas. Tampa Bay also opened additional fixed seats during the playoffs.';
+ }else if(mode==='growth'){
+  list=list.filter(t=>t.homeGames).sort((a,b)=>b.growth-a.growth);max=135;
+  headline.textContent='Who saw the biggest crowd increases?';sub.textContent='Change in average home attendance per game, from the regular season to the playoffs';
+  legend.innerHTML='<span><i class="swatch play"></i>Change in average attendance</span>';
+  note.textContent='Growth is based on average announced home attendance, not the number of games played. Only the nine teams that hosted playoff games are ranked.';
+ }else{
+  list.sort((a,b)=>b.familyBurden-a.familyBurden);max=9;
+  headline.textContent='Where was a family game day costliest?';sub.textContent='Regular-season family cost as a share of one month of metro median household income';
+  legend.innerHTML='<span><i class="swatch" style="background:#bd762e"></i>Monthly income share</span>';
+  note.textContent='Regular-season estimates only. Metro median household income is a benchmark, not the income of fans who attended.';
+ }
+ chart.innerHTML=list.map(t=>{
+  const width=(n)=>Math.min(100,(n/max)*100).toFixed(2)+'%';
+  let bars='',val='';
+  if(mode==='fill'){
+   bars=`<span class="bar-bg"><span class="bar reg" style="width:${width(t.regFill)}"></span></span><span class="bar-bg"><span class="bar play" style="width:${width(t.playFill)}"></span></span>`;
+   val=`${pct(t.playFill)}<small>${pct(t.regFill)} regular</small>`;
+  }else if(mode==='growth'){
+   bars=`<span class="bar-bg" style="height:15px"><span class="bar growth" style="width:${width(t.growth)}"></span></span>`;
+   val=`+${pct(t.growth)}<small>${fmt(t.playAvg)} fans/game</small>`;
+  }else{
+   bars=`<span class="bar-bg" style="height:15px"><span class="bar burden" style="width:${width(t.familyBurden)}"></span></span>`;
+   val=`${pct(t.familyBurden)}<small>${money(t.familyCost)}</small>`;
+  }
+  const tooltip=mode==='fill' ? `${t.team}: ${pct(t.regFill)} of seats in the regular season; ${pct(t.playFill)} in the playoffs` :mode==='growth'? `${t.team}: ${pct(t.growth)} increase in average home attendance`: `${t.team}: ${money(t.familyCost)} family outing; ${pct(t.familyBurden)} of monthly metro median income`;
+  return `<div class="barline" title="${tooltip}"><div class="team-name">${t.short}<small>${t.homeGames?`${t.homeGames} playoff home ${t.homeGames===1?'game':'games'}`:'No home playoff games'}</small></div><div class="bar-group">${bars}</div><div class="metric-value">${val}</div></div>`;
+ }).join('');
+}
+document.querySelectorAll('.toggle').forEach(b=>b.addEventListener('click',()=>drawChart(b.dataset.mode)));
+const cards=document.getElementById('cost-cards');
+const picks=['Chicago Cubs','Los Angeles Dodgers','Milwaukee Brewers','Atlanta Braves','San Diego Padres','Tampa Bay Rays'];
+cards.innerHTML=picks.map(name=>{const t=teams.find(t=>t.team===name);return `<div class="cost-mini"><b>${t.team}</b><strong>${money(t.familyCost)}</strong><small>${pct(t.familyBurden)} of monthly metro household income</small></div>`}).join('');
+function scatter(){
+const svg=document.getElementById('scatter'),ns='http://www.w3.org/2000/svg',host=teams.filter(t=>t.homeGames);
+const el=(tag,attrs,text)=>{let x=document.createElementNS(ns,tag);for(const k in attrs)x.setAttribute(k,attrs[k]);if(text!=null)x.textContent=text;svg.append(x);return x};
+const X0=70,Y0=30,W=490,H=355, xMin=0,xMax=9,yMin=70,yMax=140;
+const x=v=>X0+(v-xMin)/(xMax-xMin)*W,y=v=>Y0+H-(v-yMin)/(yMax-yMin)*H;
+[2,4,6,8].forEach(v=>{el('line',{x1:x(v),y1:Y0,x2:x(v),y2:Y0+H,stroke:'#edf1ed','stroke-width':1});el('text',{x:x(v),y:Y0+H+23,'text-anchor':'middle',fill:'#61766b','font-size':12},v+'%')});
+[80,100,120,140].forEach(v=>{el('line',{x1:X0,y1:y(v),x2:X0+W,y2:y(v),stroke:v===100?'#8caf99':'#edf1ed','stroke-width':v===100?1.5:1,'stroke-dasharray':v===100?'6 4':'0'});el('text',{x:X0-12,y:y(v)+5,'text-anchor':'end',fill:'#61766b','font-size':12},v+'%')});
+el('text',{x:X0+W/2,y:442,'text-anchor':'middle',fill:'#426251','font-size':13,'font-weight':700},'Family outing share of monthly income');
+el('text',{x:21,y:225,transform:'rotate(-90 21 225)','text-anchor':'middle',fill:'#426251','font-size':13,'font-weight':700},'Playoff crowd / fixed seats');
+const abbr={'Tampa Bay Rays':'TB','San Diego Padres':'SD','New York Yankees':'NYY','Milwaukee Brewers':'MIL','Chicago White Sox':'CWS','Cleveland Guardians':'CLE','Atlanta Braves':'ATL','Los Angeles Dodgers':'LAD','Houston Astros':'HOU'};
+const offsets={'Tampa Bay Rays':[10,-12],'San Diego Padres':[10,4],'New York Yankees':[-36,-11],'Milwaukee Brewers':[10,-12],'Chicago White Sox':[10,-10],'Cleveland Guardians':[10,-9],'Atlanta Braves':[10,17],'Los Angeles Dodgers':[10,18],'Houston Astros':[-36,13]};
+host.forEach(t=>{const cx=x(t.familyBurden),cy=y(t.playFill);const dot=el('circle',{cx,cy,r:7,fill:'#087a4b',stroke:'#fff','stroke-width':2.5});const tit=document.createElementNS(ns,'title');tit.textContent=`${t.team}: ${pct(t.playFill)} playoff seat fill; ${pct(t.familyBurden)} income share`;dot.append(tit);const [dx,dy]=offsets[t.team];el('text',{x:cx+dx,y:cy+dy,fill:'#174a35','font-size':12,'font-weight':800},abbr[t.team])});
+}
+let sortKey='playFill',ascending=false;
+function renderTable(){
+ const q=document.getElementById('team-search').value.toLowerCase().trim(),only=document.getElementById('host-only').checked;
+ const list=teams.filter(t=>(!only||t.homeGames)&&t.team.toLowerCase().includes(q)).sort((a,b)=>{
+   let av=a[sortKey],bv=b[sortKey];if(av===null)return 1;if(bv===null)return -1;
+   let compare=typeof av==='string'?av.localeCompare(bv):av-bv;return ascending?compare:-compare;
+ });
+ document.getElementById('team-body').innerHTML=list.map(t=>`<tr><td>${t.team}</td><td class="number">${t.homeGames}</td><td class="number">${fmt(t.regSeats)}</td><td class="number">${fmt(t.playSeats)}</td><td class="number">${pct(t.regFill)}</td><td class="number ${t.playFill===null?'na':''}">${t.playFill===null?'N/A':pct(t.playFill)}</td><td class="number ${t.growth===null?'na':''}">${t.growth===null?'N/A':'+'+pct(t.growth)}</td><td class="number">${money(t.familyCost)}</td><td class="number">${pct(t.familyBurden)}</td><td class="number">$${fmt(t.income)}</td></tr>`).join('');
+ document.getElementById('table-count').textContent=`Showing ${list.length} ${list.length===1?'team':'teams'}. ${only?'Teams without a home playoff game are hidden. ':'All 12 playoff clubs are available.'} Scroll sideways on smaller screens to view every column.`;
+}
+document.querySelectorAll('[data-key]').forEach(b=>b.addEventListener('click',()=>{if(sortKey===b.dataset.key)ascending=!ascending;else{sortKey=b.dataset.key;ascending=sortKey==='team'}renderTable()}));
+document.getElementById('team-search').addEventListener('input',renderTable);
+document.getElementById('host-only').addEventListener('change',renderTable);
+const ob=typeof IntersectionObserver==='undefined'?null:new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ob.unobserve(e.target)}}),{threshold:.04});
+document.querySelectorAll('.reveal').forEach(node=>{if(!ob||matchMedia('(prefers-reduced-motion: reduce)').matches)node.classList.add('visible');else ob.observe(node)});
+drawChart('fill');scatter();renderTable();
+</script>
+<script>
+/* When embedded, let the host article size the iframe as sections expand or collapse. */
+(function(){
+  if(window.parent===window)return;
+  var scheduled=false;
+  function report(){
+    if(scheduled)return;
+    scheduled=true;
+    window.requestAnimationFrame(function(){
+      scheduled=false;
+      var h=Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+      window.parent.postMessage({type:'an-mlb-2026-height',height:h},'*');
+    });
+  }
+  window.addEventListener('load',report);
+  window.addEventListener('resize',report);
+  document.addEventListener('toggle',report,true);
+  if('ResizeObserver' in window){new ResizeObserver(report).observe(document.body)}
+  report();
+})();
+</script>
+</body></html>
